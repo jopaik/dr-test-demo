@@ -1,0 +1,71 @@
+[
+  {
+    "asset_type": "project",
+    "name": "Ansible official demo project",
+    "description": "prescriptive demos from Red Hat Management Business Unit",
+    "scm_type": "git",
+    "scm_url": "https://github.com/ansible/product-demos",
+    "organization": "Default",
+    "asset_relation": {
+      "notification_templates_error": [],
+      "notification_templates_success": [],
+      "schedules": [],
+      "roles": [
+        {
+          "name": "Admin",
+          "user": [],
+          "team": []
+        },
+        {
+          "name": "Use",
+          "user": [],
+          "team": []
+        },
+        {
+          "name": "Update",
+          "user": [],
+          "team": []
+        },
+        {
+          "name": "Read",
+          "user": [],
+          "team": []
+        }
+      ]
+    }
+  },
+  {
+    "asset_type": "project",
+    "name": "dr workshop",
+    "scm_type": "git",
+    "scm_url": "https://github.com/jopaik/dr-test-demo.git",
+    "organization": "Default",
+    "asset_relation": {
+      "notification_templates_error": [],
+      "notification_templates_success": [],
+      "schedules": [],
+      "roles": [
+        {
+          "name": "Admin",
+          "user": [],
+          "team": []
+        },
+        {
+          "name": "Use",
+          "user": [],
+          "team": []
+        },
+        {
+          "name": "Update",
+          "user": [],
+          "team": []
+        },
+        {
+          "name": "Read",
+          "user": [],
+          "team": []
+        }
+      ]
+    }
+  }
+]

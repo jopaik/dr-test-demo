@@ -1,0 +1,378 @@
+[
+  {
+    "asset_type": "workflow",
+    "name": "Workflow No approval-fully automated DR Demo",
+    "organization": "Default",
+    "asset_relation": {
+      "survey_spec": {},
+      "workflow_nodes": [
+        {
+          "name": "node0",
+          "identifier": "aa9d6d4e-b394-42c0-88f8-1b4250269272",
+          "unified_job_type": "job",
+          "unified_job_name": "dr_webcontent_normal",
+          "success_nodes": [
+            "node1"
+          ],
+          "failure_nodes": [],
+          "always_nodes": []
+        },
+        {
+          "name": "node1",
+          "identifier": "e362ae82-27da-48a8-91db-5cca8005b6aa",
+          "unified_job_type": "job",
+          "unified_job_name": "dr_chk_normal_web",
+          "success_nodes": [
+            "node5"
+          ],
+          "failure_nodes": [],
+          "always_nodes": []
+        },
+        {
+          "name": "node2",
+          "identifier": "2a28039c-1d21-4b3a-b1bd-02319bd95842",
+          "unified_job_type": "job",
+          "unified_job_name": "dr_chk_dr_web",
+          "success_nodes": [],
+          "failure_nodes": [
+            "node6"
+          ],
+          "always_nodes": []
+        },
+        {
+          "name": "node3",
+          "identifier": "adf404d7-ac51-4457-994d-b809b4ed46ce",
+          "unified_job_type": "job",
+          "unified_job_name": "dr_webcontent_dr",
+          "success_nodes": [
+            "node4"
+          ],
+          "failure_nodes": [],
+          "always_nodes": []
+        },
+        {
+          "name": "node4",
+          "identifier": "898d5e85-95c2-495a-b8f2-b9b386b096a0",
+          "unified_job_type": "job",
+          "unified_job_name": "dr_chk_dr_web",
+          "success_nodes": [
+            "node8"
+          ],
+          "failure_nodes": [],
+          "always_nodes": []
+        },
+        {
+          "name": "node5",
+          "identifier": "2bce6d3c-427c-4445-a2ce-cdedcfc1a33f",
+          "unified_job_type": "job",
+          "unified_job_name": "dr_shut_apache",
+          "success_nodes": [
+            "node7"
+          ],
+          "failure_nodes": [],
+          "always_nodes": []
+        },
+        {
+          "name": "node6",
+          "identifier": "a0aa6007-3363-4d56-b962-972acb27a97c",
+          "unified_job_type": "job",
+          "unified_job_name": "dr_webcontent_normal",
+          "success_nodes": [
+            "node12"
+          ],
+          "failure_nodes": [],
+          "always_nodes": []
+        },
+        {
+          "name": "node7",
+          "identifier": "f3e60496-61a7-435f-94bf-7407af595d43",
+          "unified_job_type": "job",
+          "unified_job_name": "dr_chk_normal_web",
+          "success_nodes": [],
+          "failure_nodes": [
+            "node11"
+          ],
+          "always_nodes": []
+        },
+        {
+          "name": "node8",
+          "identifier": "3bc099ab-aa7f-411a-8d67-caf3502ed497",
+          "unified_job_type": "job",
+          "unified_job_name": "dr_declare_drtest_complete",
+          "success_nodes": [
+            "node9"
+          ],
+          "failure_nodes": [],
+          "always_nodes": []
+        },
+        {
+          "name": "node9",
+          "identifier": "f13f7347-ee2b-4a9e-a45c-95f1e70326ca",
+          "unified_job_type": "job",
+          "unified_job_name": "dr_shut_apache",
+          "success_nodes": [
+            "node2"
+          ],
+          "failure_nodes": [],
+          "always_nodes": []
+        },
+        {
+          "name": "node10",
+          "identifier": "ab7c2850-bc9d-4cb1-8d73-27c817882726",
+          "unified_job_type": "job",
+          "unified_job_name": "dr_declare_back_to_normal_complete",
+          "success_nodes": [],
+          "failure_nodes": [],
+          "always_nodes": []
+        },
+        {
+          "name": "node11",
+          "identifier": "280d9a18-8a48-40fe-8541-7056d8f6299d",
+          "unified_job_type": "job",
+          "unified_job_name": "dr_declare_disaster",
+          "success_nodes": [
+            "node3"
+          ],
+          "failure_nodes": [],
+          "always_nodes": []
+        },
+        {
+          "name": "node12",
+          "identifier": "8445ba13-6364-4d65-b271-f66332349976",
+          "unified_job_type": "job",
+          "unified_job_name": "dr_chk_normal_web",
+          "success_nodes": [
+            "node10"
+          ],
+          "failure_nodes": [],
+          "always_nodes": []
+        }
+      ],
+      "schedules": [],
+      "labels": [],
+      "roles": [
+        {
+          "name": "Admin",
+          "user": [
+            "admin"
+          ],
+          "team": []
+        },
+        {
+          "name": "Execute",
+          "user": [],
+          "team": []
+        },
+        {
+          "name": "Read",
+          "user": [],
+          "team": []
+        },
+        {
+          "name": "Approve",
+          "user": [],
+          "team": []
+        }
+      ]
+    }
+  },
+  {
+    "asset_type": "workflow",
+    "name": "Workflow with Approval DR Demo",
+    "organization": "Default",
+    "asset_relation": {
+      "survey_spec": {},
+      "workflow_nodes": [
+        {
+          "name": "node0",
+          "identifier": "ab7c2850-bc9d-4cb1-8d73-27c817882726",
+          "unified_job_type": "job",
+          "unified_job_name": "dr_declare_back_to_normal_complete",
+          "success_nodes": [],
+          "failure_nodes": [],
+          "always_nodes": []
+        },
+        {
+          "name": "node1",
+          "identifier": "a0aa6007-3363-4d56-b962-972acb27a97c",
+          "unified_job_type": "job",
+          "unified_job_name": "dr_webcontent_normal",
+          "success_nodes": [
+            "node9"
+          ],
+          "failure_nodes": [],
+          "always_nodes": []
+        },
+        {
+          "name": "node2",
+          "identifier": "aa9d6d4e-b394-42c0-88f8-1b4250269272",
+          "unified_job_type": "job",
+          "unified_job_name": "dr_webcontent_normal",
+          "success_nodes": [
+            "node8"
+          ],
+          "failure_nodes": [],
+          "always_nodes": []
+        },
+        {
+          "name": "node3",
+          "identifier": "f3e60496-61a7-435f-94bf-7407af595d43",
+          "unified_job_type": "job",
+          "unified_job_name": "dr_chk_normal_web",
+          "success_nodes": [],
+          "failure_nodes": [
+            "node6"
+          ],
+          "always_nodes": []
+        },
+        {
+          "name": "node4",
+          "identifier": "adf404d7-ac51-4457-994d-b809b4ed46ce",
+          "unified_job_type": "job",
+          "unified_job_name": "dr_webcontent_dr",
+          "success_nodes": [
+            "node11"
+          ],
+          "failure_nodes": [],
+          "always_nodes": []
+        },
+        {
+          "name": "node5",
+          "identifier": "2a28039c-1d21-4b3a-b1bd-02319bd95842",
+          "unified_job_type": "job",
+          "unified_job_name": "dr_chk_dr_web",
+          "success_nodes": [],
+          "failure_nodes": [
+            "node14"
+          ],
+          "always_nodes": []
+        },
+        {
+          "name": "node6",
+          "identifier": "280d9a18-8a48-40fe-8541-7056d8f6299d",
+          "unified_job_type": "job",
+          "unified_job_name": "dr_declare_disaster",
+          "success_nodes": [
+            "node13"
+          ],
+          "failure_nodes": [
+            "node1"
+          ],
+          "always_nodes": []
+        },
+        {
+          "name": "node7",
+          "identifier": "3bc099ab-aa7f-411a-8d67-caf3502ed497",
+          "unified_job_type": "job",
+          "unified_job_name": "dr_declare_drtest_complete",
+          "success_nodes": [
+            "node10"
+          ],
+          "failure_nodes": [],
+          "always_nodes": []
+        },
+        {
+          "name": "node8",
+          "identifier": "e362ae82-27da-48a8-91db-5cca8005b6aa",
+          "unified_job_type": "job",
+          "unified_job_name": "dr_chk_normal_web",
+          "success_nodes": [
+            "node12"
+          ],
+          "failure_nodes": [],
+          "always_nodes": []
+        },
+        {
+          "name": "node9",
+          "identifier": "8445ba13-6364-4d65-b271-f66332349976",
+          "unified_job_type": "job",
+          "unified_job_name": "dr_chk_normal_web",
+          "success_nodes": [
+            "node0"
+          ],
+          "failure_nodes": [],
+          "always_nodes": []
+        },
+        {
+          "name": "node10",
+          "identifier": "f13f7347-ee2b-4a9e-a45c-95f1e70326ca",
+          "unified_job_type": "job",
+          "unified_job_name": "dr_shut_apache",
+          "success_nodes": [
+            "node5"
+          ],
+          "failure_nodes": [],
+          "always_nodes": []
+        },
+        {
+          "name": "node11",
+          "identifier": "898d5e85-95c2-495a-b8f2-b9b386b096a0",
+          "unified_job_type": "job",
+          "unified_job_name": "dr_chk_dr_web",
+          "success_nodes": [
+            "node7"
+          ],
+          "failure_nodes": [],
+          "always_nodes": []
+        },
+        {
+          "name": "node12",
+          "identifier": "2bce6d3c-427c-4445-a2ce-cdedcfc1a33f",
+          "unified_job_type": "job",
+          "unified_job_name": "dr_shut_apache",
+          "success_nodes": [
+            "node3"
+          ],
+          "failure_nodes": [],
+          "always_nodes": []
+        },
+        {
+          "name": "node13",
+          "identifier": "51447fc2-202d-4b20-b08f-70595a265044",
+          "unified_job_type": "workflow_approval",
+          "unified_job_name": "Go or No Go for DR test",
+          "success_nodes": [
+            "node4"
+          ],
+          "failure_nodes": [],
+          "always_nodes": []
+        },
+        {
+          "name": "node14",
+          "identifier": "d1ec47c5-aebe-4791-8f6a-5bd270115441",
+          "unified_job_type": "workflow_approval",
+          "unified_job_name": "DR done. Let go back to normal state",
+          "success_nodes": [
+            "node1"
+          ],
+          "failure_nodes": [],
+          "always_nodes": []
+        }
+      ],
+      "schedules": [],
+      "labels": [],
+      "roles": [
+        {
+          "name": "Admin",
+          "user": [],
+          "team": []
+        },
+        {
+          "name": "Execute",
+          "user": [],
+          "team": []
+        },
+        {
+          "name": "Read",
+          "user": [],
+          "team": []
+        },
+        {
+          "name": "Approve",
+          "user": [],
+          "team": []
+        }
+      ]
+    }
+  }
+]

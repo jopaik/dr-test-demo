@@ -1,0 +1,305 @@
+[
+  {
+    "asset_type": "job_template",
+    "name": "dr_chk_dr_web",
+    "inventory": "Workshop Inventory",
+    "project": "dr workshop",
+    "playbook": "rhel/apache/dr_chk_app_dr.yml",
+    "limit": "node1",
+    "become_enabled": true,
+    "asset_relation": {
+      "survey_spec": {},
+      "notification_templates_error": [],
+      "notification_templates_success": [],
+      "schedules": [],
+      "labels": [],
+      "credentials": [
+        "Workshop Credential"
+      ],
+      "roles": [
+        {
+          "name": "Admin",
+          "user": [
+            "admin"
+          ],
+          "team": []
+        },
+        {
+          "name": "Execute",
+          "user": [],
+          "team": []
+        },
+        {
+          "name": "Read",
+          "user": [],
+          "team": []
+        }
+      ]
+    }
+  },
+  {
+    "asset_type": "job_template",
+    "name": "dr_chk_normal_web",
+    "inventory": "Workshop Inventory",
+    "project": "dr workshop",
+    "playbook": "rhel/apache/dr_chk_app_normal.yml",
+    "limit": "node1",
+    "asset_relation": {
+      "survey_spec": {},
+      "notification_templates_error": [
+        "dr demo jopaik@redhat.com"
+      ],
+      "notification_templates_success": [
+        "dr demo jopaik@redhat.com"
+      ],
+      "schedules": [],
+      "labels": [],
+      "credentials": [
+        "Workshop Credential"
+      ],
+      "roles": [
+        {
+          "name": "Admin",
+          "user": [
+            "admin"
+          ],
+          "team": []
+        },
+        {
+          "name": "Execute",
+          "user": [],
+          "team": []
+        },
+        {
+          "name": "Read",
+          "user": [],
+          "team": []
+        }
+      ]
+    }
+  },
+  {
+    "asset_type": "job_template",
+    "name": "dr_declare_back_to_normal_complete",
+    "inventory": "Workshop Inventory",
+    "project": "dr workshop",
+    "playbook": "rhel/apache/dr_declare_normal_complate.yml",
+    "asset_relation": {
+      "survey_spec": {},
+      "notification_templates_error": [],
+      "notification_templates_success": [],
+      "schedules": [],
+      "labels": [],
+      "credentials": [],
+      "roles": [
+        {
+          "name": "Admin",
+          "user": [
+            "admin"
+          ],
+          "team": []
+        },
+        {
+          "name": "Execute",
+          "user": [],
+          "team": []
+        },
+        {
+          "name": "Read",
+          "user": [],
+          "team": []
+        }
+      ]
+    }
+  },
+  {
+    "asset_type": "job_template",
+    "name": "dr_declare_disaster",
+    "inventory": "Workshop Inventory",
+    "project": "dr workshop",
+    "playbook": "rhel/apache/dr_declare_disaster.yml",
+    "asset_relation": {
+      "survey_spec": {},
+      "notification_templates_error": [],
+      "notification_templates_success": [
+        "dr demo jopaik@redhat.com"
+      ],
+      "schedules": [],
+      "labels": [],
+      "credentials": [],
+      "roles": [
+        {
+          "name": "Admin",
+          "user": [
+            "admin"
+          ],
+          "team": []
+        },
+        {
+          "name": "Execute",
+          "user": [],
+          "team": []
+        },
+        {
+          "name": "Read",
+          "user": [],
+          "team": []
+        }
+      ]
+    }
+  },
+  {
+    "asset_type": "job_template",
+    "name": "dr_declare_drtest_complete",
+    "inventory": "Workshop Inventory",
+    "project": "dr workshop",
+    "playbook": "rhel/apache/dr_declare_drtest_complete.yml",
+    "asset_relation": {
+      "survey_spec": {},
+      "notification_templates_error": [],
+      "notification_templates_success": [
+        "dr demo jopaik@redhat.com"
+      ],
+      "schedules": [],
+      "labels": [],
+      "credentials": [
+        "Workshop Credential"
+      ],
+      "roles": [
+        {
+          "name": "Admin",
+          "user": [
+            "admin"
+          ],
+          "team": []
+        },
+        {
+          "name": "Execute",
+          "user": [],
+          "team": []
+        },
+        {
+          "name": "Read",
+          "user": [],
+          "team": []
+        }
+      ]
+    }
+  },
+  {
+    "asset_type": "job_template",
+    "name": "dr_shut_apache",
+    "inventory": "Workshop Inventory",
+    "project": "dr workshop",
+    "playbook": "rhel/apache/dr_shut_apache.yml",
+    "limit": "node1",
+    "become_enabled": true,
+    "asset_relation": {
+      "survey_spec": {},
+      "notification_templates_error": [],
+      "notification_templates_success": [],
+      "schedules": [],
+      "labels": [],
+      "credentials": [
+        "Workshop Credential"
+      ],
+      "roles": [
+        {
+          "name": "Admin",
+          "user": [
+            "admin"
+          ],
+          "team": []
+        },
+        {
+          "name": "Execute",
+          "user": [],
+          "team": []
+        },
+        {
+          "name": "Read",
+          "user": [],
+          "team": []
+        }
+      ]
+    }
+  },
+  {
+    "asset_type": "job_template",
+    "name": "dr_webcontent_dr",
+    "inventory": "Workshop Inventory",
+    "project": "dr workshop",
+    "playbook": "rhel/apache/dr_webcontent.yml",
+    "limit": "node1",
+    "extra_vars": "dr_content: This is Disaster Recovery state\nstage: dr",
+    "become_enabled": true,
+    "asset_relation": {
+      "survey_spec": {},
+      "notification_templates_error": [],
+      "notification_templates_success": [],
+      "schedules": [],
+      "labels": [],
+      "credentials": [
+        "Workshop Credential"
+      ],
+      "roles": [
+        {
+          "name": "Admin",
+          "user": [
+            "admin"
+          ],
+          "team": []
+        },
+        {
+          "name": "Execute",
+          "user": [],
+          "team": []
+        },
+        {
+          "name": "Read",
+          "user": [],
+          "team": []
+        }
+      ]
+    }
+  },
+  {
+    "asset_type": "job_template",
+    "name": "dr_webcontent_normal",
+    "inventory": "Workshop Inventory",
+    "project": "dr workshop",
+    "playbook": "rhel/apache/dr_webcontent.yml",
+    "limit": "node1",
+    "extra_vars": "normal_content: This is normal state\nstage: normal",
+    "become_enabled": true,
+    "asset_relation": {
+      "survey_spec": {},
+      "notification_templates_error": [],
+      "notification_templates_success": [],
+      "schedules": [],
+      "labels": [],
+      "credentials": [
+        "Workshop Credential"
+      ],
+      "roles": [
+        {
+          "name": "Admin",
+          "user": [
+            "admin"
+          ],
+          "team": []
+        },
+        {
+          "name": "Execute",
+          "user": [],
+          "team": []
+        },
+        {
+          "name": "Read",
+          "user": [],
+          "team": []
+        }
+      ]
+    }
+  }
+]
