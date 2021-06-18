@@ -5,13 +5,13 @@
     "organization": "Default",
     "notification_type": "email",
     "notification_configuration": {
-      "username": "ccie6299@gmail.com",
+      "username": "ansiblebot@gmail.com",
       "password": "",
       "host": "smtp.gmail.com",
       "recipients": [
         "jopaik@redhat.com"
       ],
-      "sender": "jopaik@redhat.com",
+      "sender": "ansiblebot",
       "port": 465,
       "timeout": 30,
       "started_body": "{{ job_friendly_name }} #{{ job.id }} had status {{ job.status }}, view details at {{ url }}\n\n{{ job_metadata }}",
