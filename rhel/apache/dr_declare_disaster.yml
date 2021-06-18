@@ -1,0 +1,7 @@
+---
+- hosts: localhost
+
+  tasks:
+    - name: Normal Shutdown Complete - Disaster Declared
+      debug:
+        msg: "Normal Shutdown Complete - Disaster is Declared"

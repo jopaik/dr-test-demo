@@ -1,0 +1,7 @@
+---
+- hosts: localhost
+
+  tasks:
+    - name: DR test Complete - Back to normal State
+      debug:
+        msg: "DR test Complete - Back to normal State"

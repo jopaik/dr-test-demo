@@ -1,0 +1,6 @@
+---
+- name: Shutdown Apache 
+  hosts: web
+
+  roles:
+    - role_dr_shut_apache

@@ -1,0 +1,6 @@
+---
+- name: Check Web for DR state
+  hosts: web
+
+  roles:
+    - role_dr_app_ck_dr

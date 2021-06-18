@@ -1,0 +1,7 @@
+---
+- hosts: localhost
+
+  tasks:
+    - name: Normal state is Complete - Back to business as usual
+      debug:
+        msg: "Normal state is Complete - Back to business as usual"

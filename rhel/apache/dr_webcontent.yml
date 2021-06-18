@@ -1,0 +1,6 @@
+---
+- name: Deploy Apache web content for DR demo
+  hosts: web
+
+  roles:
+    - role_webcontent_dr

@@ -1,0 +1,6 @@
+---
+- name: Check Web for Normal state
+  hosts: web
+
+  roles:
+    - role_normal_app_ck_normal
