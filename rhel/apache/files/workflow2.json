@@ -1,0 +1,1583 @@
+{
+     "workflow_job_templates": [
+          {
+               "name": "Workflow No approval-fully automated DR Demo",
+               "description": "",
+               "extra_vars": "",
+               "survey_enabled": false,
+               "allow_simultaneous": false,
+               "ask_variables_on_launch": false,
+               "inventory": null,
+               "limit": null,
+               "scm_branch": null,
+               "ask_inventory_on_launch": false,
+               "ask_scm_branch_on_launch": false,
+               "ask_limit_on_launch": false,
+               "webhook_service": "",
+               "webhook_credential": null,
+               "organization": {
+                    "name": "Default",
+                    "type": "organization"
+               },
+               "related": {
+                    "schedules": [],
+                    "workflow_nodes": [
+                         {
+                              "extra_data": {},
+                              "inventory": null,
+                              "scm_branch": null,
+                              "job_type": null,
+                              "job_tags": null,
+                              "skip_tags": null,
+                              "limit": null,
+                              "diff_mode": null,
+                              "verbosity": null,
+                              "all_parents_must_converge": false,
+                              "identifier": "aa9d6d4e-b394-42c0-88f8-1b4250269272",
+                              "workflow_job_template": {
+                                   "organization": {
+                                        "name": "Default",
+                                        "type": "organization"
+                                   },
+                                   "name": "Workflow No approval-fully automated DR Demo",
+                                   "type": "workflow_job_template"
+                              },
+                              "unified_job_template": {
+                                   "organization": {
+                                        "name": "Default",
+                                        "type": "organization"
+                                   },
+                                   "name": "dr_webcontent_normal",
+                                   "type": "job_template"
+                              },
+                              "related": {
+                                   "credentials": [],
+                                   "success_nodes": [
+                                        {
+                                             "workflow_job_template": {
+                                                  "organization": {
+                                                       "name": "Default",
+                                                       "type": "organization"
+                                                  },
+                                                  "name": "Workflow No approval-fully automated DR Demo",
+                                                  "type": "workflow_job_template"
+                                             },
+                                             "identifier": "e362ae82-27da-48a8-91db-5cca8005b6aa",
+                                             "type": "workflow_job_template_node"
+                                        }
+                                   ],
+                                   "failure_nodes": [],
+                                   "always_nodes": []
+                              },
+                              "natural_key": {
+                                   "workflow_job_template": {
+                                        "organization": {
+                                             "name": "Default",
+                                             "type": "organization"
+                                        },
+                                        "name": "Workflow No approval-fully automated DR Demo",
+                                        "type": "workflow_job_template"
+                                   },
+                                   "identifier": "aa9d6d4e-b394-42c0-88f8-1b4250269272",
+                                   "type": "workflow_job_template_node"
+                              }
+                         },
+                         {
+                              "extra_data": {},
+                              "inventory": null,
+                              "scm_branch": null,
+                              "job_type": null,
+                              "job_tags": null,
+                              "skip_tags": null,
+                              "limit": null,
+                              "diff_mode": null,
+                              "verbosity": null,
+                              "all_parents_must_converge": false,
+                              "identifier": "e362ae82-27da-48a8-91db-5cca8005b6aa",
+                              "workflow_job_template": {
+                                   "organization": {
+                                        "name": "Default",
+                                        "type": "organization"
+                                   },
+                                   "name": "Workflow No approval-fully automated DR Demo",
+                                   "type": "workflow_job_template"
+                              },
+                              "unified_job_template": {
+                                   "organization": {
+                                        "name": "Default",
+                                        "type": "organization"
+                                   },
+                                   "name": "dr_chk_normal_web",
+                                   "type": "job_template"
+                              },
+                              "related": {
+                                   "credentials": [],
+                                   "success_nodes": [
+                                        {
+                                             "workflow_job_template": {
+                                                  "organization": {
+                                                       "name": "Default",
+                                                       "type": "organization"
+                                                  },
+                                                  "name": "Workflow No approval-fully automated DR Demo",
+                                                  "type": "workflow_job_template"
+                                             },
+                                             "identifier": "2bce6d3c-427c-4445-a2ce-cdedcfc1a33f",
+                                             "type": "workflow_job_template_node"
+                                        }
+                                   ],
+                                   "failure_nodes": [],
+                                   "always_nodes": []
+                              },
+                              "natural_key": {
+                                   "workflow_job_template": {
+                                        "organization": {
+                                             "name": "Default",
+                                             "type": "organization"
+                                        },
+                                        "name": "Workflow No approval-fully automated DR Demo",
+                                        "type": "workflow_job_template"
+                                   },
+                                   "identifier": "e362ae82-27da-48a8-91db-5cca8005b6aa",
+                                   "type": "workflow_job_template_node"
+                              }
+                         },
+                         {
+                              "extra_data": {},
+                              "inventory": null,
+                              "scm_branch": null,
+                              "job_type": null,
+                              "job_tags": null,
+                              "skip_tags": null,
+                              "limit": null,
+                              "diff_mode": null,
+                              "verbosity": null,
+                              "all_parents_must_converge": false,
+                              "identifier": "2a28039c-1d21-4b3a-b1bd-02319bd95842",
+                              "workflow_job_template": {
+                                   "organization": {
+                                        "name": "Default",
+                                        "type": "organization"
+                                   },
+                                   "name": "Workflow No approval-fully automated DR Demo",
+                                   "type": "workflow_job_template"
+                              },
+                              "unified_job_template": {
+                                   "organization": {
+                                        "name": "Default",
+                                        "type": "organization"
+                                   },
+                                   "name": "dr_chk_dr_web",
+                                   "type": "job_template"
+                              },
+                              "related": {
+                                   "credentials": [],
+                                   "success_nodes": [],
+                                   "failure_nodes": [
+                                        {
+                                             "workflow_job_template": {
+                                                  "organization": {
+                                                       "name": "Default",
+                                                       "type": "organization"
+                                                  },
+                                                  "name": "Workflow No approval-fully automated DR Demo",
+                                                  "type": "workflow_job_template"
+                                             },
+                                             "identifier": "a0aa6007-3363-4d56-b962-972acb27a97c",
+                                             "type": "workflow_job_template_node"
+                                        }
+                                   ],
+                                   "always_nodes": []
+                              },
+                              "natural_key": {
+                                   "workflow_job_template": {
+                                        "organization": {
+                                             "name": "Default",
+                                             "type": "organization"
+                                        },
+                                        "name": "Workflow No approval-fully automated DR Demo",
+                                        "type": "workflow_job_template"
+                                   },
+                                   "identifier": "2a28039c-1d21-4b3a-b1bd-02319bd95842",
+                                   "type": "workflow_job_template_node"
+                              }
+                         },
+                         {
+                              "extra_data": {},
+                              "inventory": null,
+                              "scm_branch": null,
+                              "job_type": null,
+                              "job_tags": null,
+                              "skip_tags": null,
+                              "limit": null,
+                              "diff_mode": null,
+                              "verbosity": null,
+                              "all_parents_must_converge": false,
+                              "identifier": "adf404d7-ac51-4457-994d-b809b4ed46ce",
+                              "workflow_job_template": {
+                                   "organization": {
+                                        "name": "Default",
+                                        "type": "organization"
+                                   },
+                                   "name": "Workflow No approval-fully automated DR Demo",
+                                   "type": "workflow_job_template"
+                              },
+                              "unified_job_template": {
+                                   "organization": {
+                                        "name": "Default",
+                                        "type": "organization"
+                                   },
+                                   "name": "dr_webcontent_dr",
+                                   "type": "job_template"
+                              },
+                              "related": {
+                                   "credentials": [],
+                                   "success_nodes": [
+                                        {
+                                             "workflow_job_template": {
+                                                  "organization": {
+                                                       "name": "Default",
+                                                       "type": "organization"
+                                                  },
+                                                  "name": "Workflow No approval-fully automated DR Demo",
+                                                  "type": "workflow_job_template"
+                                             },
+                                             "identifier": "898d5e85-95c2-495a-b8f2-b9b386b096a0",
+                                             "type": "workflow_job_template_node"
+                                        }
+                                   ],
+                                   "failure_nodes": [],
+                                   "always_nodes": []
+                              },
+                              "natural_key": {
+                                   "workflow_job_template": {
+                                        "organization": {
+                                             "name": "Default",
+                                             "type": "organization"
+                                        },
+                                        "name": "Workflow No approval-fully automated DR Demo",
+                                        "type": "workflow_job_template"
+                                   },
+                                   "identifier": "adf404d7-ac51-4457-994d-b809b4ed46ce",
+                                   "type": "workflow_job_template_node"
+                              }
+                         },
+                         {
+                              "extra_data": {},
+                              "inventory": null,
+                              "scm_branch": null,
+                              "job_type": null,
+                              "job_tags": null,
+                              "skip_tags": null,
+                              "limit": null,
+                              "diff_mode": null,
+                              "verbosity": null,
+                              "all_parents_must_converge": false,
+                              "identifier": "898d5e85-95c2-495a-b8f2-b9b386b096a0",
+                              "workflow_job_template": {
+                                   "organization": {
+                                        "name": "Default",
+                                        "type": "organization"
+                                   },
+                                   "name": "Workflow No approval-fully automated DR Demo",
+                                   "type": "workflow_job_template"
+                              },
+                              "unified_job_template": {
+                                   "organization": {
+                                        "name": "Default",
+                                        "type": "organization"
+                                   },
+                                   "name": "dr_chk_dr_web",
+                                   "type": "job_template"
+                              },
+                              "related": {
+                                   "credentials": [],
+                                   "success_nodes": [
+                                        {
+                                             "workflow_job_template": {
+                                                  "organization": {
+                                                       "name": "Default",
+                                                       "type": "organization"
+                                                  },
+                                                  "name": "Workflow No approval-fully automated DR Demo",
+                                                  "type": "workflow_job_template"
+                                             },
+                                             "identifier": "3bc099ab-aa7f-411a-8d67-caf3502ed497",
+                                             "type": "workflow_job_template_node"
+                                        }
+                                   ],
+                                   "failure_nodes": [],
+                                   "always_nodes": []
+                              },
+                              "natural_key": {
+                                   "workflow_job_template": {
+                                        "organization": {
+                                             "name": "Default",
+                                             "type": "organization"
+                                        },
+                                        "name": "Workflow No approval-fully automated DR Demo",
+                                        "type": "workflow_job_template"
+                                   },
+                                   "identifier": "898d5e85-95c2-495a-b8f2-b9b386b096a0",
+                                   "type": "workflow_job_template_node"
+                              }
+                         },
+                         {
+                              "extra_data": {},
+                              "inventory": null,
+                              "scm_branch": null,
+                              "job_type": null,
+                              "job_tags": null,
+                              "skip_tags": null,
+                              "limit": null,
+                              "diff_mode": null,
+                              "verbosity": null,
+                              "all_parents_must_converge": false,
+                              "identifier": "2bce6d3c-427c-4445-a2ce-cdedcfc1a33f",
+                              "workflow_job_template": {
+                                   "organization": {
+                                        "name": "Default",
+                                        "type": "organization"
+                                   },
+                                   "name": "Workflow No approval-fully automated DR Demo",
+                                   "type": "workflow_job_template"
+                              },
+                              "unified_job_template": {
+                                   "organization": {
+                                        "name": "Default",
+                                        "type": "organization"
+                                   },
+                                   "name": "dr_shut_apache",
+                                   "type": "job_template"
+                              },
+                              "related": {
+                                   "credentials": [],
+                                   "success_nodes": [
+                                        {
+                                             "workflow_job_template": {
+                                                  "organization": {
+                                                       "name": "Default",
+                                                       "type": "organization"
+                                                  },
+                                                  "name": "Workflow No approval-fully automated DR Demo",
+                                                  "type": "workflow_job_template"
+                                             },
+                                             "identifier": "f3e60496-61a7-435f-94bf-7407af595d43",
+                                             "type": "workflow_job_template_node"
+                                        }
+                                   ],
+                                   "failure_nodes": [],
+                                   "always_nodes": []
+                              },
+                              "natural_key": {
+                                   "workflow_job_template": {
+                                        "organization": {
+                                             "name": "Default",
+                                             "type": "organization"
+                                        },
+                                        "name": "Workflow No approval-fully automated DR Demo",
+                                        "type": "workflow_job_template"
+                                   },
+                                   "identifier": "2bce6d3c-427c-4445-a2ce-cdedcfc1a33f",
+                                   "type": "workflow_job_template_node"
+                              }
+                         },
+                         {
+                              "extra_data": {},
+                              "inventory": null,
+                              "scm_branch": null,
+                              "job_type": null,
+                              "job_tags": null,
+                              "skip_tags": null,
+                              "limit": null,
+                              "diff_mode": null,
+                              "verbosity": null,
+                              "all_parents_must_converge": false,
+                              "identifier": "a0aa6007-3363-4d56-b962-972acb27a97c",
+                              "workflow_job_template": {
+                                   "organization": {
+                                        "name": "Default",
+                                        "type": "organization"
+                                   },
+                                   "name": "Workflow No approval-fully automated DR Demo",
+                                   "type": "workflow_job_template"
+                              },
+                              "unified_job_template": {
+                                   "organization": {
+                                        "name": "Default",
+                                        "type": "organization"
+                                   },
+                                   "name": "dr_webcontent_normal",
+                                   "type": "job_template"
+                              },
+                              "related": {
+                                   "credentials": [],
+                                   "success_nodes": [
+                                        {
+                                             "workflow_job_template": {
+                                                  "organization": {
+                                                       "name": "Default",
+                                                       "type": "organization"
+                                                  },
+                                                  "name": "Workflow No approval-fully automated DR Demo",
+                                                  "type": "workflow_job_template"
+                                             },
+                                             "identifier": "8445ba13-6364-4d65-b271-f66332349976",
+                                             "type": "workflow_job_template_node"
+                                        }
+                                   ],
+                                   "failure_nodes": [],
+                                   "always_nodes": []
+                              },
+                              "natural_key": {
+                                   "workflow_job_template": {
+                                        "organization": {
+                                             "name": "Default",
+                                             "type": "organization"
+                                        },
+                                        "name": "Workflow No approval-fully automated DR Demo",
+                                        "type": "workflow_job_template"
+                                   },
+                                   "identifier": "a0aa6007-3363-4d56-b962-972acb27a97c",
+                                   "type": "workflow_job_template_node"
+                              }
+                         },
+                         {
+                              "extra_data": {},
+                              "inventory": null,
+                              "scm_branch": null,
+                              "job_type": null,
+                              "job_tags": null,
+                              "skip_tags": null,
+                              "limit": null,
+                              "diff_mode": null,
+                              "verbosity": null,
+                              "all_parents_must_converge": false,
+                              "identifier": "f3e60496-61a7-435f-94bf-7407af595d43",
+                              "workflow_job_template": {
+                                   "organization": {
+                                        "name": "Default",
+                                        "type": "organization"
+                                   },
+                                   "name": "Workflow No approval-fully automated DR Demo",
+                                   "type": "workflow_job_template"
+                              },
+                              "unified_job_template": {
+                                   "organization": {
+                                        "name": "Default",
+                                        "type": "organization"
+                                   },
+                                   "name": "dr_chk_normal_web",
+                                   "type": "job_template"
+                              },
+                              "related": {
+                                   "credentials": [],
+                                   "success_nodes": [],
+                                   "failure_nodes": [
+                                        {
+                                             "workflow_job_template": {
+                                                  "organization": {
+                                                       "name": "Default",
+                                                       "type": "organization"
+                                                  },
+                                                  "name": "Workflow No approval-fully automated DR Demo",
+                                                  "type": "workflow_job_template"
+                                             },
+                                             "identifier": "280d9a18-8a48-40fe-8541-7056d8f6299d",
+                                             "type": "workflow_job_template_node"
+                                        }
+                                   ],
+                                   "always_nodes": []
+                              },
+                              "natural_key": {
+                                   "workflow_job_template": {
+                                        "organization": {
+                                             "name": "Default",
+                                             "type": "organization"
+                                        },
+                                        "name": "Workflow No approval-fully automated DR Demo",
+                                        "type": "workflow_job_template"
+                                   },
+                                   "identifier": "f3e60496-61a7-435f-94bf-7407af595d43",
+                                   "type": "workflow_job_template_node"
+                              }
+                         },
+                         {
+                              "extra_data": {},
+                              "inventory": null,
+                              "scm_branch": null,
+                              "job_type": null,
+                              "job_tags": null,
+                              "skip_tags": null,
+                              "limit": null,
+                              "diff_mode": null,
+                              "verbosity": null,
+                              "all_parents_must_converge": false,
+                              "identifier": "3bc099ab-aa7f-411a-8d67-caf3502ed497",
+                              "workflow_job_template": {
+                                   "organization": {
+                                        "name": "Default",
+                                        "type": "organization"
+                                   },
+                                   "name": "Workflow No approval-fully automated DR Demo",
+                                   "type": "workflow_job_template"
+                              },
+                              "unified_job_template": {
+                                   "organization": {
+                                        "name": "Default",
+                                        "type": "organization"
+                                   },
+                                   "name": "dr_declare_drtest_complete",
+                                   "type": "job_template"
+                              },
+                              "related": {
+                                   "credentials": [],
+                                   "success_nodes": [
+                                        {
+                                             "workflow_job_template": {
+                                                  "organization": {
+                                                       "name": "Default",
+                                                       "type": "organization"
+                                                  },
+                                                  "name": "Workflow No approval-fully automated DR Demo",
+                                                  "type": "workflow_job_template"
+                                             },
+                                             "identifier": "49375588-c4b2-4913-8f1b-155c57cf4d97",
+                                             "type": "workflow_job_template_node"
+                                        }
+                                   ],
+                                   "failure_nodes": [],
+                                   "always_nodes": []
+                              },
+                              "natural_key": {
+                                   "workflow_job_template": {
+                                        "organization": {
+                                             "name": "Default",
+                                             "type": "organization"
+                                        },
+                                        "name": "Workflow No approval-fully automated DR Demo",
+                                        "type": "workflow_job_template"
+                                   },
+                                   "identifier": "3bc099ab-aa7f-411a-8d67-caf3502ed497",
+                                   "type": "workflow_job_template_node"
+                              }
+                         },
+                         {
+                              "extra_data": {},
+                              "inventory": null,
+                              "scm_branch": null,
+                              "job_type": null,
+                              "job_tags": null,
+                              "skip_tags": null,
+                              "limit": null,
+                              "diff_mode": null,
+                              "verbosity": null,
+                              "all_parents_must_converge": false,
+                              "identifier": "49375588-c4b2-4913-8f1b-155c57cf4d97",
+                              "workflow_job_template": {
+                                   "organization": {
+                                        "name": "Default",
+                                        "type": "organization"
+                                   },
+                                   "name": "Workflow No approval-fully automated DR Demo",
+                                   "type": "workflow_job_template"
+                              },
+                              "unified_job_template": {
+                                   "organization": {
+                                        "name": "Default",
+                                        "type": "organization"
+                                   },
+                                   "name": "dr_shut_apache_dr",
+                                   "type": "job_template"
+                              },
+                              "related": {
+                                   "credentials": [],
+                                   "success_nodes": [
+                                        {
+                                             "workflow_job_template": {
+                                                  "organization": {
+                                                       "name": "Default",
+                                                       "type": "organization"
+                                                  },
+                                                  "name": "Workflow No approval-fully automated DR Demo",
+                                                  "type": "workflow_job_template"
+                                             },
+                                             "identifier": "2a28039c-1d21-4b3a-b1bd-02319bd95842",
+                                             "type": "workflow_job_template_node"
+                                        }
+                                   ],
+                                   "failure_nodes": [],
+                                   "always_nodes": []
+                              },
+                              "natural_key": {
+                                   "workflow_job_template": {
+                                        "organization": {
+                                             "name": "Default",
+                                             "type": "organization"
+                                        },
+                                        "name": "Workflow No approval-fully automated DR Demo",
+                                        "type": "workflow_job_template"
+                                   },
+                                   "identifier": "49375588-c4b2-4913-8f1b-155c57cf4d97",
+                                   "type": "workflow_job_template_node"
+                              }
+                         },
+                         {
+                              "extra_data": {},
+                              "inventory": null,
+                              "scm_branch": null,
+                              "job_type": null,
+                              "job_tags": null,
+                              "skip_tags": null,
+                              "limit": null,
+                              "diff_mode": null,
+                              "verbosity": null,
+                              "all_parents_must_converge": false,
+                              "identifier": "ab7c2850-bc9d-4cb1-8d73-27c817882726",
+                              "workflow_job_template": {
+                                   "organization": {
+                                        "name": "Default",
+                                        "type": "organization"
+                                   },
+                                   "name": "Workflow No approval-fully automated DR Demo",
+                                   "type": "workflow_job_template"
+                              },
+                              "unified_job_template": {
+                                   "organization": {
+                                        "name": "Default",
+                                        "type": "organization"
+                                   },
+                                   "name": "dr_declare_back_to_normal_complete",
+                                   "type": "job_template"
+                              },
+                              "related": {
+                                   "credentials": [],
+                                   "success_nodes": [],
+                                   "failure_nodes": [],
+                                   "always_nodes": []
+                              },
+                              "natural_key": {
+                                   "workflow_job_template": {
+                                        "organization": {
+                                             "name": "Default",
+                                             "type": "organization"
+                                        },
+                                        "name": "Workflow No approval-fully automated DR Demo",
+                                        "type": "workflow_job_template"
+                                   },
+                                   "identifier": "ab7c2850-bc9d-4cb1-8d73-27c817882726",
+                                   "type": "workflow_job_template_node"
+                              }
+                         },
+                         {
+                              "extra_data": {},
+                              "inventory": null,
+                              "scm_branch": null,
+                              "job_type": null,
+                              "job_tags": null,
+                              "skip_tags": null,
+                              "limit": null,
+                              "diff_mode": null,
+                              "verbosity": null,
+                              "all_parents_must_converge": false,
+                              "identifier": "280d9a18-8a48-40fe-8541-7056d8f6299d",
+                              "workflow_job_template": {
+                                   "organization": {
+                                        "name": "Default",
+                                        "type": "organization"
+                                   },
+                                   "name": "Workflow No approval-fully automated DR Demo",
+                                   "type": "workflow_job_template"
+                              },
+                              "unified_job_template": {
+                                   "organization": {
+                                        "name": "Default",
+                                        "type": "organization"
+                                   },
+                                   "name": "dr_declare_disaster",
+                                   "type": "job_template"
+                              },
+                              "related": {
+                                   "credentials": [],
+                                   "success_nodes": [
+                                        {
+                                             "workflow_job_template": {
+                                                  "organization": {
+                                                       "name": "Default",
+                                                       "type": "organization"
+                                                  },
+                                                  "name": "Workflow No approval-fully automated DR Demo",
+                                                  "type": "workflow_job_template"
+                                             },
+                                             "identifier": "adf404d7-ac51-4457-994d-b809b4ed46ce",
+                                             "type": "workflow_job_template_node"
+                                        }
+                                   ],
+                                   "failure_nodes": [],
+                                   "always_nodes": []
+                              },
+                              "natural_key": {
+                                   "workflow_job_template": {
+                                        "organization": {
+                                             "name": "Default",
+                                             "type": "organization"
+                                        },
+                                        "name": "Workflow No approval-fully automated DR Demo",
+                                        "type": "workflow_job_template"
+                                   },
+                                   "identifier": "280d9a18-8a48-40fe-8541-7056d8f6299d",
+                                   "type": "workflow_job_template_node"
+                              }
+                         },
+                         {
+                              "extra_data": {},
+                              "inventory": null,
+                              "scm_branch": null,
+                              "job_type": null,
+                              "job_tags": null,
+                              "skip_tags": null,
+                              "limit": null,
+                              "diff_mode": null,
+                              "verbosity": null,
+                              "all_parents_must_converge": false,
+                              "identifier": "8445ba13-6364-4d65-b271-f66332349976",
+                              "workflow_job_template": {
+                                   "organization": {
+                                        "name": "Default",
+                                        "type": "organization"
+                                   },
+                                   "name": "Workflow No approval-fully automated DR Demo",
+                                   "type": "workflow_job_template"
+                              },
+                              "unified_job_template": {
+                                   "organization": {
+                                        "name": "Default",
+                                        "type": "organization"
+                                   },
+                                   "name": "dr_chk_normal_web",
+                                   "type": "job_template"
+                              },
+                              "related": {
+                                   "credentials": [],
+                                   "success_nodes": [
+                                        {
+                                             "workflow_job_template": {
+                                                  "organization": {
+                                                       "name": "Default",
+                                                       "type": "organization"
+                                                  },
+                                                  "name": "Workflow No approval-fully automated DR Demo",
+                                                  "type": "workflow_job_template"
+                                             },
+                                             "identifier": "ab7c2850-bc9d-4cb1-8d73-27c817882726",
+                                             "type": "workflow_job_template_node"
+                                        }
+                                   ],
+                                   "failure_nodes": [],
+                                   "always_nodes": []
+                              },
+                              "natural_key": {
+                                   "workflow_job_template": {
+                                        "organization": {
+                                             "name": "Default",
+                                             "type": "organization"
+                                        },
+                                        "name": "Workflow No approval-fully automated DR Demo",
+                                        "type": "workflow_job_template"
+                                   },
+                                   "identifier": "8445ba13-6364-4d65-b271-f66332349976",
+                                   "type": "workflow_job_template_node"
+                              }
+                         }
+                    ],
+                    "labels": [],
+                    "notification_templates_started": [
+                         {
+                              "organization": {
+                                   "name": "Default",
+                                   "type": "organization"
+                              },
+                              "name": "dr demo jopaik@redhat.com",
+                              "type": "notification_template"
+                         }
+                    ],
+                    "notification_templates_success": [
+                         {
+                              "organization": {
+                                   "name": "Default",
+                                   "type": "organization"
+                              },
+                              "name": "dr demo jopaik@redhat.com",
+                              "type": "notification_template"
+                         }
+                    ],
+                    "notification_templates_error": [
+                         {
+                              "organization": {
+                                   "name": "Default",
+                                   "type": "organization"
+                              },
+                              "name": "dr demo jopaik@redhat.com",
+                              "type": "notification_template"
+                         }
+                    ],
+                    "notification_templates_approvals": [],
+                    "survey_spec": {}
+               },
+               "natural_key": {
+                    "organization": {
+                         "name": "Default",
+                         "type": "organization"
+                    },
+                    "name": "Workflow No approval-fully automated DR Demo",
+                    "type": "workflow_job_template"
+               }
+          },
+          {
+               "name": "Workflow with Approval DR Demo",
+               "description": "",
+               "extra_vars": "",
+               "survey_enabled": false,
+               "allow_simultaneous": false,
+               "ask_variables_on_launch": false,
+               "inventory": null,
+               "limit": null,
+               "scm_branch": null,
+               "ask_inventory_on_launch": false,
+               "ask_scm_branch_on_launch": false,
+               "ask_limit_on_launch": false,
+               "webhook_service": "",
+               "webhook_credential": null,
+               "organization": {
+                    "name": "Default",
+                    "type": "organization"
+               },
+               "related": {
+                    "schedules": [],
+                    "workflow_nodes": [
+                         {
+                              "extra_data": {},
+                              "inventory": null,
+                              "scm_branch": null,
+                              "job_type": null,
+                              "job_tags": null,
+                              "skip_tags": null,
+                              "limit": null,
+                              "diff_mode": null,
+                              "verbosity": null,
+                              "all_parents_must_converge": false,
+                              "identifier": "ab7c2850-bc9d-4cb1-8d73-27c817882726",
+                              "workflow_job_template": {
+                                   "organization": {
+                                        "name": "Default",
+                                        "type": "organization"
+                                   },
+                                   "name": "Workflow with Approval DR Demo",
+                                   "type": "workflow_job_template"
+                              },
+                              "unified_job_template": {
+                                   "organization": {
+                                        "name": "Default",
+                                        "type": "organization"
+                                   },
+                                   "name": "dr_declare_back_to_normal_complete",
+                                   "type": "job_template"
+                              },
+                              "related": {
+                                   "credentials": [],
+                                   "success_nodes": [],
+                                   "failure_nodes": [],
+                                   "always_nodes": []
+                              },
+                              "natural_key": {
+                                   "workflow_job_template": {
+                                        "organization": {
+                                             "name": "Default",
+                                             "type": "organization"
+                                        },
+                                        "name": "Workflow with Approval DR Demo",
+                                        "type": "workflow_job_template"
+                                   },
+                                   "identifier": "ab7c2850-bc9d-4cb1-8d73-27c817882726",
+                                   "type": "workflow_job_template_node"
+                              }
+                         },
+                         {
+                              "extra_data": {},
+                              "inventory": null,
+                              "scm_branch": null,
+                              "job_type": null,
+                              "job_tags": null,
+                              "skip_tags": null,
+                              "limit": null,
+                              "diff_mode": null,
+                              "verbosity": null,
+                              "all_parents_must_converge": false,
+                              "identifier": "aa9d6d4e-b394-42c0-88f8-1b4250269272",
+                              "workflow_job_template": {
+                                   "organization": {
+                                        "name": "Default",
+                                        "type": "organization"
+                                   },
+                                   "name": "Workflow with Approval DR Demo",
+                                   "type": "workflow_job_template"
+                              },
+                              "unified_job_template": {
+                                   "organization": {
+                                        "name": "Default",
+                                        "type": "organization"
+                                   },
+                                   "name": "dr_webcontent_normal",
+                                   "type": "job_template"
+                              },
+                              "related": {
+                                   "credentials": [],
+                                   "success_nodes": [
+                                        {
+                                             "workflow_job_template": {
+                                                  "organization": {
+                                                       "name": "Default",
+                                                       "type": "organization"
+                                                  },
+                                                  "name": "Workflow with Approval DR Demo",
+                                                  "type": "workflow_job_template"
+                                             },
+                                             "identifier": "e362ae82-27da-48a8-91db-5cca8005b6aa",
+                                             "type": "workflow_job_template_node"
+                                        }
+                                   ],
+                                   "failure_nodes": [],
+                                   "always_nodes": []
+                              },
+                              "natural_key": {
+                                   "workflow_job_template": {
+                                        "organization": {
+                                             "name": "Default",
+                                             "type": "organization"
+                                        },
+                                        "name": "Workflow with Approval DR Demo",
+                                        "type": "workflow_job_template"
+                                   },
+                                   "identifier": "aa9d6d4e-b394-42c0-88f8-1b4250269272",
+                                   "type": "workflow_job_template_node"
+                              }
+                         },
+                         {
+                              "extra_data": {},
+                              "inventory": null,
+                              "scm_branch": null,
+                              "job_type": null,
+                              "job_tags": null,
+                              "skip_tags": null,
+                              "limit": null,
+                              "diff_mode": null,
+                              "verbosity": null,
+                              "all_parents_must_converge": false,
+                              "identifier": "f3e60496-61a7-435f-94bf-7407af595d43",
+                              "workflow_job_template": {
+                                   "organization": {
+                                        "name": "Default",
+                                        "type": "organization"
+                                   },
+                                   "name": "Workflow with Approval DR Demo",
+                                   "type": "workflow_job_template"
+                              },
+                              "unified_job_template": {
+                                   "organization": {
+                                        "name": "Default",
+                                        "type": "organization"
+                                   },
+                                   "name": "dr_chk_normal_web",
+                                   "type": "job_template"
+                              },
+                              "related": {
+                                   "credentials": [],
+                                   "success_nodes": [],
+                                   "failure_nodes": [
+                                        {
+                                             "workflow_job_template": {
+                                                  "organization": {
+                                                       "name": "Default",
+                                                       "type": "organization"
+                                                  },
+                                                  "name": "Workflow with Approval DR Demo",
+                                                  "type": "workflow_job_template"
+                                             },
+                                             "identifier": "280d9a18-8a48-40fe-8541-7056d8f6299d",
+                                             "type": "workflow_job_template_node"
+                                        }
+                                   ],
+                                   "always_nodes": []
+                              },
+                              "natural_key": {
+                                   "workflow_job_template": {
+                                        "organization": {
+                                             "name": "Default",
+                                             "type": "organization"
+                                        },
+                                        "name": "Workflow with Approval DR Demo",
+                                        "type": "workflow_job_template"
+                                   },
+                                   "identifier": "f3e60496-61a7-435f-94bf-7407af595d43",
+                                   "type": "workflow_job_template_node"
+                              }
+                         },
+                         {
+                              "extra_data": {},
+                              "inventory": null,
+                              "scm_branch": null,
+                              "job_type": null,
+                              "job_tags": null,
+                              "skip_tags": null,
+                              "limit": null,
+                              "diff_mode": null,
+                              "verbosity": null,
+                              "all_parents_must_converge": false,
+                              "identifier": "adf404d7-ac51-4457-994d-b809b4ed46ce",
+                              "workflow_job_template": {
+                                   "organization": {
+                                        "name": "Default",
+                                        "type": "organization"
+                                   },
+                                   "name": "Workflow with Approval DR Demo",
+                                   "type": "workflow_job_template"
+                              },
+                              "unified_job_template": {
+                                   "organization": {
+                                        "name": "Default",
+                                        "type": "organization"
+                                   },
+                                   "name": "dr_webcontent_dr",
+                                   "type": "job_template"
+                              },
+                              "related": {
+                                   "credentials": [],
+                                   "success_nodes": [
+                                        {
+                                             "workflow_job_template": {
+                                                  "organization": {
+                                                       "name": "Default",
+                                                       "type": "organization"
+                                                  },
+                                                  "name": "Workflow with Approval DR Demo",
+                                                  "type": "workflow_job_template"
+                                             },
+                                             "identifier": "898d5e85-95c2-495a-b8f2-b9b386b096a0",
+                                             "type": "workflow_job_template_node"
+                                        }
+                                   ],
+                                   "failure_nodes": [],
+                                   "always_nodes": []
+                              },
+                              "natural_key": {
+                                   "workflow_job_template": {
+                                        "organization": {
+                                             "name": "Default",
+                                             "type": "organization"
+                                        },
+                                        "name": "Workflow with Approval DR Demo",
+                                        "type": "workflow_job_template"
+                                   },
+                                   "identifier": "adf404d7-ac51-4457-994d-b809b4ed46ce",
+                                   "type": "workflow_job_template_node"
+                              }
+                         },
+                         {
+                              "extra_data": {},
+                              "inventory": null,
+                              "scm_branch": null,
+                              "job_type": null,
+                              "job_tags": null,
+                              "skip_tags": null,
+                              "limit": null,
+                              "diff_mode": null,
+                              "verbosity": null,
+                              "all_parents_must_converge": false,
+                              "identifier": "2a28039c-1d21-4b3a-b1bd-02319bd95842",
+                              "workflow_job_template": {
+                                   "organization": {
+                                        "name": "Default",
+                                        "type": "organization"
+                                   },
+                                   "name": "Workflow with Approval DR Demo",
+                                   "type": "workflow_job_template"
+                              },
+                              "unified_job_template": {
+                                   "organization": {
+                                        "name": "Default",
+                                        "type": "organization"
+                                   },
+                                   "name": "dr_chk_dr_web",
+                                   "type": "job_template"
+                              },
+                              "related": {
+                                   "credentials": [],
+                                   "success_nodes": [],
+                                   "failure_nodes": [
+                                        {
+                                             "workflow_job_template": {
+                                                  "organization": {
+                                                       "name": "Default",
+                                                       "type": "organization"
+                                                  },
+                                                  "name": "Workflow with Approval DR Demo",
+                                                  "type": "workflow_job_template"
+                                             },
+                                             "identifier": "d9668cc6-4883-4007-8cc6-8ed743d5c82e",
+                                             "type": "workflow_job_template_node"
+                                        }
+                                   ],
+                                   "always_nodes": []
+                              },
+                              "natural_key": {
+                                   "workflow_job_template": {
+                                        "organization": {
+                                             "name": "Default",
+                                             "type": "organization"
+                                        },
+                                        "name": "Workflow with Approval DR Demo",
+                                        "type": "workflow_job_template"
+                                   },
+                                   "identifier": "2a28039c-1d21-4b3a-b1bd-02319bd95842",
+                                   "type": "workflow_job_template_node"
+                              }
+                         },
+                         {
+                              "extra_data": {},
+                              "inventory": null,
+                              "scm_branch": null,
+                              "job_type": null,
+                              "job_tags": null,
+                              "skip_tags": null,
+                              "limit": null,
+                              "diff_mode": null,
+                              "verbosity": null,
+                              "all_parents_must_converge": false,
+                              "identifier": "280d9a18-8a48-40fe-8541-7056d8f6299d",
+                              "workflow_job_template": {
+                                   "organization": {
+                                        "name": "Default",
+                                        "type": "organization"
+                                   },
+                                   "name": "Workflow with Approval DR Demo",
+                                   "type": "workflow_job_template"
+                              },
+                              "unified_job_template": {
+                                   "organization": {
+                                        "name": "Default",
+                                        "type": "organization"
+                                   },
+                                   "name": "dr_declare_disaster",
+                                   "type": "job_template"
+                              },
+                              "related": {
+                                   "credentials": [],
+                                   "success_nodes": [
+                                        {
+                                             "workflow_job_template": {
+                                                  "organization": {
+                                                       "name": "Default",
+                                                       "type": "organization"
+                                                  },
+                                                  "name": "Workflow with Approval DR Demo",
+                                                  "type": "workflow_job_template"
+                                             },
+                                             "identifier": "04cd9fbe-87b4-4781-88e9-5029dd2c564a",
+                                             "type": "workflow_job_template_node"
+                                        }
+                                   ],
+                                   "failure_nodes": [],
+                                   "always_nodes": []
+                              },
+                              "natural_key": {
+                                   "workflow_job_template": {
+                                        "organization": {
+                                             "name": "Default",
+                                             "type": "organization"
+                                        },
+                                        "name": "Workflow with Approval DR Demo",
+                                        "type": "workflow_job_template"
+                                   },
+                                   "identifier": "280d9a18-8a48-40fe-8541-7056d8f6299d",
+                                   "type": "workflow_job_template_node"
+                              }
+                         },
+                         {
+                              "extra_data": {},
+                              "inventory": null,
+                              "scm_branch": null,
+                              "job_type": null,
+                              "job_tags": null,
+                              "skip_tags": null,
+                              "limit": null,
+                              "diff_mode": null,
+                              "verbosity": null,
+                              "all_parents_must_converge": false,
+                              "identifier": "3bc099ab-aa7f-411a-8d67-caf3502ed497",
+                              "workflow_job_template": {
+                                   "organization": {
+                                        "name": "Default",
+                                        "type": "organization"
+                                   },
+                                   "name": "Workflow with Approval DR Demo",
+                                   "type": "workflow_job_template"
+                              },
+                              "unified_job_template": {
+                                   "organization": {
+                                        "name": "Default",
+                                        "type": "organization"
+                                   },
+                                   "name": "dr_declare_drtest_complete",
+                                   "type": "job_template"
+                              },
+                              "related": {
+                                   "credentials": [],
+                                   "success_nodes": [
+                                        {
+                                             "workflow_job_template": {
+                                                  "organization": {
+                                                       "name": "Default",
+                                                       "type": "organization"
+                                                  },
+                                                  "name": "Workflow with Approval DR Demo",
+                                                  "type": "workflow_job_template"
+                                             },
+                                             "identifier": "8a6ca885-96a3-4028-b819-ca0596a2d32f",
+                                             "type": "workflow_job_template_node"
+                                        }
+                                   ],
+                                   "failure_nodes": [],
+                                   "always_nodes": []
+                              },
+                              "natural_key": {
+                                   "workflow_job_template": {
+                                        "organization": {
+                                             "name": "Default",
+                                             "type": "organization"
+                                        },
+                                        "name": "Workflow with Approval DR Demo",
+                                        "type": "workflow_job_template"
+                                   },
+                                   "identifier": "3bc099ab-aa7f-411a-8d67-caf3502ed497",
+                                   "type": "workflow_job_template_node"
+                              }
+                         },
+                         {
+                              "extra_data": {},
+                              "inventory": null,
+                              "scm_branch": null,
+                              "job_type": null,
+                              "job_tags": null,
+                              "skip_tags": null,
+                              "limit": null,
+                              "diff_mode": null,
+                              "verbosity": null,
+                              "all_parents_must_converge": false,
+                              "identifier": "e362ae82-27da-48a8-91db-5cca8005b6aa",
+                              "workflow_job_template": {
+                                   "organization": {
+                                        "name": "Default",
+                                        "type": "organization"
+                                   },
+                                   "name": "Workflow with Approval DR Demo",
+                                   "type": "workflow_job_template"
+                              },
+                              "unified_job_template": {
+                                   "organization": {
+                                        "name": "Default",
+                                        "type": "organization"
+                                   },
+                                   "name": "dr_chk_normal_web",
+                                   "type": "job_template"
+                              },
+                              "related": {
+                                   "credentials": [],
+                                   "success_nodes": [
+                                        {
+                                             "workflow_job_template": {
+                                                  "organization": {
+                                                       "name": "Default",
+                                                       "type": "organization"
+                                                  },
+                                                  "name": "Workflow with Approval DR Demo",
+                                                  "type": "workflow_job_template"
+                                             },
+                                             "identifier": "2bce6d3c-427c-4445-a2ce-cdedcfc1a33f",
+                                             "type": "workflow_job_template_node"
+                                        }
+                                   ],
+                                   "failure_nodes": [],
+                                   "always_nodes": []
+                              },
+                              "natural_key": {
+                                   "workflow_job_template": {
+                                        "organization": {
+                                             "name": "Default",
+                                             "type": "organization"
+                                        },
+                                        "name": "Workflow with Approval DR Demo",
+                                        "type": "workflow_job_template"
+                                   },
+                                   "identifier": "e362ae82-27da-48a8-91db-5cca8005b6aa",
+                                   "type": "workflow_job_template_node"
+                              }
+                         },
+                         {
+                              "extra_data": {},
+                              "inventory": null,
+                              "scm_branch": null,
+                              "job_type": null,
+                              "job_tags": null,
+                              "skip_tags": null,
+                              "limit": null,
+                              "diff_mode": null,
+                              "verbosity": null,
+                              "all_parents_must_converge": false,
+                              "identifier": "8445ba13-6364-4d65-b271-f66332349976",
+                              "workflow_job_template": {
+                                   "organization": {
+                                        "name": "Default",
+                                        "type": "organization"
+                                   },
+                                   "name": "Workflow with Approval DR Demo",
+                                   "type": "workflow_job_template"
+                              },
+                              "unified_job_template": {
+                                   "organization": {
+                                        "name": "Default",
+                                        "type": "organization"
+                                   },
+                                   "name": "dr_chk_normal_web",
+                                   "type": "job_template"
+                              },
+                              "related": {
+                                   "credentials": [],
+                                   "success_nodes": [
+                                        {
+                                             "workflow_job_template": {
+                                                  "organization": {
+                                                       "name": "Default",
+                                                       "type": "organization"
+                                                  },
+                                                  "name": "Workflow with Approval DR Demo",
+                                                  "type": "workflow_job_template"
+                                             },
+                                             "identifier": "ab7c2850-bc9d-4cb1-8d73-27c817882726",
+                                             "type": "workflow_job_template_node"
+                                        }
+                                   ],
+                                   "failure_nodes": [],
+                                   "always_nodes": []
+                              },
+                              "natural_key": {
+                                   "workflow_job_template": {
+                                        "organization": {
+                                             "name": "Default",
+                                             "type": "organization"
+                                        },
+                                        "name": "Workflow with Approval DR Demo",
+                                        "type": "workflow_job_template"
+                                   },
+                                   "identifier": "8445ba13-6364-4d65-b271-f66332349976",
+                                   "type": "workflow_job_template_node"
+                              }
+                         },
+                         {
+                              "extra_data": {},
+                              "inventory": null,
+                              "scm_branch": null,
+                              "job_type": null,
+                              "job_tags": null,
+                              "skip_tags": null,
+                              "limit": null,
+                              "diff_mode": null,
+                              "verbosity": null,
+                              "all_parents_must_converge": false,
+                              "identifier": "8a6ca885-96a3-4028-b819-ca0596a2d32f",
+                              "workflow_job_template": {
+                                   "organization": {
+                                        "name": "Default",
+                                        "type": "organization"
+                                   },
+                                   "name": "Workflow with Approval DR Demo",
+                                   "type": "workflow_job_template"
+                              },
+                              "unified_job_template": {
+                                   "organization": {
+                                        "name": "Default",
+                                        "type": "organization"
+                                   },
+                                   "name": "dr_shut_apache_dr",
+                                   "type": "job_template"
+                              },
+                              "related": {
+                                   "credentials": [],
+                                   "success_nodes": [
+                                        {
+                                             "workflow_job_template": {
+                                                  "organization": {
+                                                       "name": "Default",
+                                                       "type": "organization"
+                                                  },
+                                                  "name": "Workflow with Approval DR Demo",
+                                                  "type": "workflow_job_template"
+                                             },
+                                             "identifier": "2a28039c-1d21-4b3a-b1bd-02319bd95842",
+                                             "type": "workflow_job_template_node"
+                                        }
+                                   ],
+                                   "failure_nodes": [],
+                                   "always_nodes": []
+                              },
+                              "natural_key": {
+                                   "workflow_job_template": {
+                                        "organization": {
+                                             "name": "Default",
+                                             "type": "organization"
+                                        },
+                                        "name": "Workflow with Approval DR Demo",
+                                        "type": "workflow_job_template"
+                                   },
+                                   "identifier": "8a6ca885-96a3-4028-b819-ca0596a2d32f",
+                                   "type": "workflow_job_template_node"
+                              }
+                         },
+                         {
+                              "extra_data": {},
+                              "inventory": null,
+                              "scm_branch": null,
+                              "job_type": null,
+                              "job_tags": null,
+                              "skip_tags": null,
+                              "limit": null,
+                              "diff_mode": null,
+                              "verbosity": null,
+                              "all_parents_must_converge": false,
+                              "identifier": "898d5e85-95c2-495a-b8f2-b9b386b096a0",
+                              "workflow_job_template": {
+                                   "organization": {
+                                        "name": "Default",
+                                        "type": "organization"
+                                   },
+                                   "name": "Workflow with Approval DR Demo",
+                                   "type": "workflow_job_template"
+                              },
+                              "unified_job_template": {
+                                   "organization": {
+                                        "name": "Default",
+                                        "type": "organization"
+                                   },
+                                   "name": "dr_chk_dr_web",
+                                   "type": "job_template"
+                              },
+                              "related": {
+                                   "credentials": [],
+                                   "success_nodes": [
+                                        {
+                                             "workflow_job_template": {
+                                                  "organization": {
+                                                       "name": "Default",
+                                                       "type": "organization"
+                                                  },
+                                                  "name": "Workflow with Approval DR Demo",
+                                                  "type": "workflow_job_template"
+                                             },
+                                             "identifier": "3bc099ab-aa7f-411a-8d67-caf3502ed497",
+                                             "type": "workflow_job_template_node"
+                                        }
+                                   ],
+                                   "failure_nodes": [],
+                                   "always_nodes": []
+                              },
+                              "natural_key": {
+                                   "workflow_job_template": {
+                                        "organization": {
+                                             "name": "Default",
+                                             "type": "organization"
+                                        },
+                                        "name": "Workflow with Approval DR Demo",
+                                        "type": "workflow_job_template"
+                                   },
+                                   "identifier": "898d5e85-95c2-495a-b8f2-b9b386b096a0",
+                                   "type": "workflow_job_template_node"
+                              }
+                         },
+                         {
+                              "extra_data": {},
+                              "inventory": null,
+                              "scm_branch": null,
+                              "job_type": null,
+                              "job_tags": null,
+                              "skip_tags": null,
+                              "limit": null,
+                              "diff_mode": null,
+                              "verbosity": null,
+                              "all_parents_must_converge": false,
+                              "identifier": "2bce6d3c-427c-4445-a2ce-cdedcfc1a33f",
+                              "workflow_job_template": {
+                                   "organization": {
+                                        "name": "Default",
+                                        "type": "organization"
+                                   },
+                                   "name": "Workflow with Approval DR Demo",
+                                   "type": "workflow_job_template"
+                              },
+                              "unified_job_template": {
+                                   "organization": {
+                                        "name": "Default",
+                                        "type": "organization"
+                                   },
+                                   "name": "dr_shut_apache",
+                                   "type": "job_template"
+                              },
+                              "related": {
+                                   "credentials": [],
+                                   "success_nodes": [
+                                        {
+                                             "workflow_job_template": {
+                                                  "organization": {
+                                                       "name": "Default",
+                                                       "type": "organization"
+                                                  },
+                                                  "name": "Workflow with Approval DR Demo",
+                                                  "type": "workflow_job_template"
+                                             },
+                                             "identifier": "f3e60496-61a7-435f-94bf-7407af595d43",
+                                             "type": "workflow_job_template_node"
+                                        }
+                                   ],
+                                   "failure_nodes": [],
+                                   "always_nodes": []
+                              },
+                              "natural_key": {
+                                   "workflow_job_template": {
+                                        "organization": {
+                                             "name": "Default",
+                                             "type": "organization"
+                                        },
+                                        "name": "Workflow with Approval DR Demo",
+                                        "type": "workflow_job_template"
+                                   },
+                                   "identifier": "2bce6d3c-427c-4445-a2ce-cdedcfc1a33f",
+                                   "type": "workflow_job_template_node"
+                              }
+                         }
+                    ],
+                    "labels": [],
+                    "notification_templates_started": [],
+                    "notification_templates_success": [],
+                    "notification_templates_error": [],
+                    "notification_templates_approvals": [],
+                    "survey_spec": {}
+               },
+               "natural_key": {
+                    "organization": {
+                         "name": "Default",
+                         "type": "organization"
+                    },
+                    "name": "Workflow with Approval DR Demo",
+                    "type": "workflow_job_template"
+               }
+          }
+     ]
+}
