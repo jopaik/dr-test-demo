@@ -1,0 +1,38 @@
+{
+     "notification_templates": [
+          {
+               "name": "dr demo jopaik@redhat.com",
+               "description": "",
+               "notification_type": "email",
+               "notification_configuration": {
+                    "username": "ansiblebot@gmail.com",
+                    "password": "",
+                    "host": "smtp.gmail.com",
+                    "recipients": [
+                         "jopaik@redhat.com",
+                         "slack-email-notify-de-aaaaegnmqncwoojjl2pyheyezq@ansible.slack.com",
+                         "dev106653@servicenowdevelopers.com",
+                         ""
+                    ],
+                    "sender": "ansiblebot@gmail.com",
+                    "port": 465,
+                    "timeout": 30,
+                    "use_ssl": true,
+                    "use_tls": false
+               },
+               "messages": null,
+               "organization": {
+                    "name": "Default",
+                    "type": "organization"
+               },
+               "natural_key": {
+                    "organization": {
+                         "name": "Default",
+                         "type": "organization"
+                    },
+                    "name": "dr demo jopaik@redhat.com",
+                    "type": "notification_template"
+               }
+          }
+     ]
+}
