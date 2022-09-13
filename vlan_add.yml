@@ -1,0 +1,24 @@
+---
+- name: Move VLAN to DR
+  hosts: arista
+
+  tasks:
+    - name: Create vlan
+      arista.eos.eos_vlan:
+        vlan_id: 4000
+        name: vlan-4000
+        state: present
+
+    - name: Add interfaces to vlan
+      arista.eos.eos_vlan:
+        vlan_id: 4000
+        state: present
+        interfaces:
+          - Ethernet1
+          - Ethernet2
+
+    - name: Check if interfaces is assigned to vlan
+      arista.eos.eos_vlan:
+        vlan_id: 4000
+        associated_interfaces:
+          - Ethernet1
