@@ -1,0 +1,40 @@
+{
+     "projects": [
+          {
+               "name": "dr workshop",
+               "description": "",
+               "local_path": "_11__dr_workshop",
+               "scm_type": "git",
+               "scm_url": "https://github.com/jopaik/dr-test-demo.git",
+               "scm_branch": "",
+               "scm_refspec": "",
+               "scm_clean": false,
+               "scm_track_submodules": false,
+               "scm_delete_on_update": false,
+               "credential": null,
+               "timeout": 0,
+               "scm_update_on_launch": false,
+               "scm_update_cache_timeout": 0,
+               "allow_override": false,
+               "default_environment": null,
+               "organization": {
+                    "name": "Default",
+                    "type": "organization"
+               },
+               "related": {
+                    "schedules": [],
+                    "notification_templates_started": [],
+                    "notification_templates_success": [],
+                    "notification_templates_error": []
+               },
+               "natural_key": {
+                    "organization": {
+                         "name": "Default",
+                         "type": "organization"
+                    },
+                    "name": "dr workshop",
+                    "type": "project"
+               }
+          }
+     ]
+}

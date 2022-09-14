@@ -5,16 +5,13 @@
                "description": "",
                "notification_type": "email",
                "notification_configuration": {
-                    "username": "ansiblebot@gmail.com",
+                    "username": "jopaik@redhat.com",
                     "password": "",
                     "host": "smtp.gmail.com",
                     "recipients": [
-                         "jopaik@redhat.com",
-                         "slack-email-notify-de-aaaaegnmqncwoojjl2pyheyezq@ansible.slack.com",
-                         "dev106653@servicenowdevelopers.com",
-                         ""
+                         "jopaik@redhat.com"
                     ],
-                    "sender": "ansiblebot@gmail.com",
+                    "sender": "jopaik@redhat.com",
                     "port": 465,
                     "timeout": 30,
                     "use_ssl": true,
